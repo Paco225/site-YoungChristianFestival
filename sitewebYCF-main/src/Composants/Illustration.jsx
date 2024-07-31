@@ -3,13 +3,13 @@ import { Zoom } from 'react-awesome-reveal'
 
 const Illustration = () => {
   return (
-    <div className="w-full justify-center pt-20">
-          <Zoom >
-              <img src={image} alt="illustration" className='flex relative w-full justify-center items-center
-                mt-[-90px] pb-[40px] overflow-hidden' />
-          </Zoom>
+<div className="flex justify-center items-center min-h-screen pt-20">
+  <Zoom>
+    <img src={image} alt="illustration" className="w-full mt-[-90px] pb-[40px]" />
+  </Zoom>
+</div>
 
-      </div>
+
   )
 }
 

@@ -13,36 +13,47 @@ import logo11 from '../assets/logofficiel.png';
 import logo12 from '../assets/logofficiel.png';
 import logo13 from '../assets/logofficiel.png';
 import logo14 from '../assets/logofficiel.png';
-// ... (rest of your imports)
 
 const Sponsor = () => {
     const logos = [
-        logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14 
+        logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14
     ];
 
     return (
-        <div className=" bg-white
-    px-20 pb-60 
-    text-aligns
-    overflow-hidden
-    block md:p-8
-    pt-20">
+        <div className="bg-white px-4 py-20 text-center overflow-hidden">
             <Fade direction='up'>
-                <h2 className="text-gray-600  md:text-xl lg:text-2xl font-bold text-center mb-4 md:mb-8 ">
+                <h2 className="text-gray-600 md:text-xl lg:text-2xl font-bold mb-4 md:mb-8 pb-6">
                     ILS SOUTIENNENT LE PROJET
                 </h2>
             </Fade>
-            <Zoom bottom >
-                <div className="grid grid-cols-5 justify-center items-center  md:gap-8">
-                    {logos.map((logo, index) => (
-                        <div key={index} className="w-1/3 md:w-auto mb-1 ">
-                            <Zoom>
-                                <img src={logo} alt={`Logo ${index + 1}`} className="mx-auto h-12 md:h-auto w-[60%]" />
-                            </Zoom>
-                        </div>
-                    ))}
+            <Zoom bottom>
+                <div className="relative overflow-hidden">
+                    <div className="flex animate-scroll whitespace-nowrap">
+                        {logos.map((logo, index) => (
+                            <div key={index} className="flex-shrink-0 px-4"> 
+                                <Zoom>
+                                    <img src={logo} alt={`Logo ${index + 1}`} className="h-24 w-auto" /> 
+                                </Zoom>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </Zoom>
+
+            <style jsx>{`
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                .animate-scroll {
+                    animation: scroll 20s linear infinite;
+                }
+            `}</style>
         </div>
     );
 };
