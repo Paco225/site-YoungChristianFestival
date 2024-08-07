@@ -26,9 +26,9 @@ const Header = () => {
                         >
                             {isOpen ? (
                                 <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M4 6h16a1 1 0 010 2H4a1 1 0 010-2zm16 5H4a1 1 0 100 2h16a1 1 0 100-2zm0 5H4a1 1 0 000 2h16a1 1 0 000-2z"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                                 />
                             ) : (
                                 <path
@@ -68,16 +68,16 @@ const Header = () => {
             {isOpen && (
                 <ul className="md:hidden mt-4 mb-3 ">
                     <li>
-                        <Link className="block text-white hover:text-gray-300 py-2">ACCUEIL</Link>
+                        <Link  to={'/'} className="block text-white hover:text-gray-300 py-2">ACCUEIL</Link>
                     </li>
                     <li>
-                        <Link className="block text-white hover:text-gray-300 py-2">FESTIVAL</Link>
+                        <Link  to={'/festival'} className="block text-white hover:text-gray-300 py-2">FESTIVAL</Link>
                     </li>
                     <li>
                         <a href="#" className="block text-white hover:text-gray-300 py-2">BILLETERIE</a>
                     </li>
                     <li>
-                        <Link className="block text-white hover:text-gray-300 py-2">CONTACT</Link>
+                        <Link  to={'/contact'} className="block text-white hover:text-gray-300 py-2">CONTACT</Link>
                     </li>
                     {/* Bouton Chat WhatsApp pour mobile */}
                     <li>

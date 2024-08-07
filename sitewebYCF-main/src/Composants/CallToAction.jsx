@@ -22,10 +22,8 @@ const CallToAction = () => {
                     <div className="relative">
                         <Zoom>
                             <img src={orange} alt="image 1" className='block w-full h-auto' />
-
                         </Zoom>
                         <Zoom>
-                            
                         </Zoom>
                         <a href='#' className='absolute top-1/2 left-1/2 
                     transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold text-[26px] '>
@@ -33,8 +31,6 @@ const CallToAction = () => {
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </Zoom>
         

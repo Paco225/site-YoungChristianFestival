@@ -7,7 +7,7 @@ import { Zoom } from 'react-awesome-reveal';
 
 const AccueilIcone = () => {
     return (
-        <div className="icon-grid">
+        <div className="icon-grid ">
             <Zoom cascade={true} duration={900}>
                 <div className="icon-grid__item sm  ">
                     <img src={icon1} className="icon-grid__icon mx-auto w-24 sm:w-32" alt="Icon 1" />

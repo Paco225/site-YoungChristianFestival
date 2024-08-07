@@ -20,7 +20,7 @@ const Sponsor = () => {
     ];
 
     return (
-        <div className="bg-white px-4 py-20 text-center overflow-hidden">
+        <div className="bg-gray-100 px-4 py-20 text-center overflow-hidden">
             <Fade direction='up'>
                 <h2 className="text-gray-600 md:text-xl lg:text-2xl font-bold mb-4 md:mb-8 pb-6">
                     ILS SOUTIENNENT LE PROJET
